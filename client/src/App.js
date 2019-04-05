@@ -23,7 +23,7 @@ class App extends Component {
         //structure data for render
         const mapData = this.state.data.map((eachEl) => {
             return(
-                <div>
+                <div key={eachEl._id}>
                     <p>Name: {eachEl.ticket_person_reporting}</p>
                     <p>Problem: {eachEl.ticket_problem_description}</p>
                     <p>Date: {eachEl.ticket_date}</p>
